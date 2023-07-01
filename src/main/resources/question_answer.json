@@ -1,0 +1,79 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Здравствуй %s. Ты потерял память. Принять вызов?",
+      "result": "CONTINUE",
+      "answers": [
+        {
+          "id": 1,
+          "answer": "Отклонить вызов",
+          "nextQuestionId": 2
+        },
+        {
+          "id": 2,
+          "answer": "Принять вызов",
+          "nextQuestionId": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Ты отклонил вызов.",
+      "result": "DEFEAT",
+      "answers": null
+    },
+    {
+      "id": 3,
+      "text": "Ты принял вызов. Поднимешься на мостик к копитану?",
+      "result": "CONTINUE",
+      "answers": [
+        {
+          "id": 3,
+          "answer": "Отказаться подниматься на мостик",
+          "nextQuestionId": 4
+        },
+        {
+          "id": 4,
+          "answer": "Подняться на мостик",
+          "nextQuestionId": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Ты не прошел на переговоры.",
+      "result": "DEFEAT",
+      "answers": null
+    },
+    {
+      "id": 5,
+      "text": "Ты поднялся на мостик. Ты кто?",
+      "result": "CONTINUE",
+      "answers": [
+        {
+          "id": 6,
+          "answer": "Солгать о себе",
+          "nextQuestionId": 6
+        },
+        {
+          "id": 7,
+          "answer": "Рассказать правду о себе",
+          "nextQuestionId": 7
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Твою ложь разоблачили.",
+      "result": "DEFEAT",
+      "answers": null
+    },
+    {
+      "id": 7,
+      "text": "Тебя вернули домой.",
+      "result": "VICTORY",
+      "answers": null
+    }
+  ]
+}
